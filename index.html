@@ -26,23 +26,43 @@ body {
 
 h1 {
   color: #c2185b;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
-button {
-  padding: 15px 30px;
+a.button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 35px;
   font-size: 18px;
-  border: none;
+  color: white;
+  text-decoration: none;
   border-radius: 10px;
   background-color: #c2185b;
-  color: white;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
 }
 
-button:hover {
-  background-color: #e91e63;
-  transform: scale(1.05);
+/* Contour animé */
+a.button::before {
+  content: "";
+  position: absolute;
+  top: -5px; left: -5px; right: -5px; bottom: -5px;
+  border: 2px solid #c2185b;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+/* Effet au survol */
+a.button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(194, 24, 91, 0.6);
+}
+
+a.button:hover::before {
+  border-color: #e91e63;
+  box-shadow: 0 0 15px #e91e63;
 }
 
 @keyframes fadeIn {
@@ -55,13 +75,9 @@ button:hover {
 
 <div class="container">
   <h1>Bienvenue sur mon site ! 🌸</h1>
-  <a href="Page1.html"class="button">Entrez</a>
+  <a href="page1.html" class="button">Entrez</a>
 </div>
 
-
-
-
-  
 </body>
 </html>
 
