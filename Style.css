@@ -1,0 +1,184 @@
+body{
+
+background-color:#f0f8ff;
+font-family:Arial,sans serif;}
+
+/* Listes à puces non ordonnées */ 
+ 
+.cercle 
+{ 
+list-style-type: circle; 
+} 
+.carre 
+{ 
+list-style-type: square; 
+} 
+.rien 
+{ 
+list-style-type: none; 
+}
+.commence_a_zero 
+{ 
+list-style-type: decimal-leading-zero; 
+} 
+.lettres_minuscules 
+{ 
+list-style-type: lower-alpha; 
+} 
+.chiffres_romains 
+{ 
+list-style-type: upper-roman; 
+} 
+.lettres_grecques 
+{ 
+list-style-type: lower-greek; 
+} 
+ 
+/* Quelques styles supplémentaires juste pour la présentation 
+En plus ça vous fait quelques rappels ;o) */ 
+ 
+h2 
+{ 
+text-indent: 20px; 
+font-family: Arial, Verdana, "Times New Roman", serif; 
+} 
+em 
+{ 
+background-color: yellow; 
+} 
+strong 
+{color: red; 
+}  
+
+ul {
+  list-style-type: none;   /* enlève les puces normales */
+  padding-left: 30px;
+}
+
+ul li {
+  background: url("Noeud.jpg") no-repeat left center;
+  background-size: 20px;
+  padding-left: 25px;
+}
+ 
+
+
+p { 
+margin: 0; 
+} 
+p#premier { width: 
+100px; background: 
+orange; 
+} 
+p#second { 
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 150px; 
+height: 50px; 
+background: green; 
+}
+
+/* Style général */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* En-tête */
+h1, h2, h3, h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
+h3 {
+  font-size: 1.3em;
+  margin-top: 20px;
+}
+
+h4 {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+/* Liens */
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Images */
+img {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease;
+}
+
+
+
+
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Listes */
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+/* Bloc d'informations */
+blockquote {
+  background-color: #eaf0f6;
+  border-left: 5px solid #0077cc;
+  padding: 15px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Conteneur principal */
+div {
+  margin-bottom: 30px;
+}
+
+/* Pied de page ou autres sections */
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px;
+}
+
+
+
+
+
+body {
+  
+
+  /* Image de fond */
+  background-image: url("image2.jpg"); /* Chemin vers ton image */
+  background-size: cover;                   /* L'image couvre tout l'écran */
+  background-position: center;              /* Centrée */
+  background-repeat: no-repeat;             /* Pas de répétition */
+}
+

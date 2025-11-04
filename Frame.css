@@ -1,0 +1,7 @@
+<FRAMESET ROWS="30%,70%"> 
+<FRAME SRC="A.htm"> 
+<FRAMESET COLS="30%,70%"> 
+<FRAME SRC="B.htm"> 
+<FRAME SRC="C.htm" NAME="fenetreC"> 
+</FRAMESET> 
+</FRAMESET> 

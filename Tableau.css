@@ -1,0 +1,18 @@
+.tableau{
+  width: 300px;
+  height: 200px;
+  border-collapse: collapse;
+  border: 2px solid black;
+  font-family: arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+
+}
+
+.tableau td{
+  text-align: center;
+  vertical-align: middle;
+}
+tr, td{
+  border: 1px solid black ;
+}

@@ -1,0 +1,93 @@
+
+<h2>Quelques listes ordonnées</h2> 
+<p>Liste à puces ordonnée sans modification (= <em>decimal</em>)</p> 
+<ol> 
+<li>Un</li> 
+<li>Deux</li> 
+<li>Trois</li> 
+<li>Quatre</li> 
+</ol> 
+<p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE)</strong>) :</p> 
+<ol class="commence_a_zero"> 
+<li>Un</li> 
+<li>Deux</li> 
+<li>Trois</li> 
+<li>Quatre</li> 
+</ol> 
+<p>Avec <em>lower-alpha</em> :</p> 
+<ol class="lettres_minuscules"> 
+<li>Un</li> 
+<li>Deux</li> 
+<li>Trois</li> 
+<li>Quatre</li> 
+</ol> 
+<p>Avec <em>upper-roman</em> :</p> 
+<ol class="chiffres_romains"> 
+<li>Un</li> 
+<li>Deux</li> 
+<li>Trois</li> 
+<li>Quatre</li> 
+</ol> 
+<p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p> 
+<ol class="lettres_grecques"> 
+<li>Un</li> 
+<li>Deux</li> 
+<li>Trois</li> 
+<li>Quatre</li> 
+</ol> 
+
+<style>
+	body{background-image: url(image6.jpg);
+	 /* Image de fond */
+  background-image: url("image6.jpg"); /* Chemin vers ton image */
+  background-size: cover;                   /* L'image couvre tout l'écran */
+  background-position: center;              /* Centrée */
+  background-repeat: no-repeat;             /* Pas de répétition */}
+
+</style>
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercice - Reproduction des Tableaux</title>
+<link rel="stylesheet" href="Tableau.css">
+</style>
+</head>
+<body>
+<table class="tableau">
+<tr>
+	<td colspan="2" style="background-color:brown; ">RGL1</td>
+</tr>
+<td style="background-color: red";>RGL2</td>
+<td style="background-color: gray;";>RGL3</td>
+</table>
+<br>
+<table class="tableau">
+<tr>
+	<td rowspan="2" style="background-color:purple;">RMS2</td>
+<td style="background-color:hotpink;">RMS1</td>
+</tr>
+<tr>
+<td style="background-color:pink;">RMS3</td>
+</tr>
+</table>
+<br>
+<table class="tableau">
+<tr>
+	<td colspan="3" style="background-color:beige;">A</td>
+</tr>
+<tr>
+<td rowspan="2" style="background-color:blueviolet;">B</td>
+<td colspan="2" style="background-color:hotpink;">C</td>
+</tr>
+<tr><td style="background-color:lightblue;">D</td>
+<td style="background-color:olive;">E</td>
+</tr>
+</table>
+</body>
+</html>

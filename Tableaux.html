@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exercice - Reproduction des Tableaux</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 40px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .tableau {
+    border: 2px solid black;
+    margin-bottom: 30px;
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* TABLEAU 1 */
+  .tableau1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 80px;
+  }
+
+  .tableau1 .RGL1 {
+    grid-column: 1 / span 2;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau1 .RGL2 {
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau1 .RGL3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* TABLEAU 2 */
+  .tableau2 {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: 60px 80px;
+  }
+
+  .tableau2 .RMS1 {
+    grid-row: 1 / span 2;
+    border-right: 2px solid black;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau2 .RM2 {
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau2 .RMS3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* TABLEAU 3 */
+  .tableau3 {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-rows: 60px 80px 80px;
+  }
+
+  .tableau3 .A {
+    grid-column: 1 / span 3;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau3 .B {
+    grid-row: 2 / span 2;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau3 .C {
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau3 .D {
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tableau3 .E {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>Exercice - Reproduction des Tableaux</h1>
+
+<!-- TABLEAU 1 -->
+<div class="tableau tableau1">
+  <div class="RGL1">RGL1</div>
+  <div class="RGL2">RGL2</div>
+  <div class="RGL3">RGL3 Vote</div>
+</div>
+
+<!-- TABLEAU 2 -->
+<div class="tableau tableau2">
+  <div class="RMS1">RMS1</div>
+  <div class="RM2">RM2</div>
+  <div class="RMS3">RMS3 Vote</div>
+</div>
+
+<!-- TABLEAU 3 -->
+<div class="tableau tableau3">
+  <div class="A">A</div>
+  <div class="B">B</div>
+  <div class="C">C</div>
+  <div class="D">D</div>
+  <div class="E">E</div>
+</div>
+
+</body>
+</html>
