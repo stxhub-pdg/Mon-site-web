@@ -14,6 +14,11 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /* --- Conteneur principal --- */
@@ -49,6 +54,26 @@ p {
   transform: scale(1.02);
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
+}
+
+/* --- Bouton CV --- */
+a.cv-button {
+  display: inline-block;
+  margin: 30px auto;
+  padding: 15px 35px;
+  font-size: 18px;
+  color: white;
+  background-color: #3b82f6; /* bleu */
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+a.cv-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(59,130,246,0.6);
 }
 
 /* --- Animation d’apparition (diaporama) --- */
@@ -110,11 +135,8 @@ section:nth-child(4) {animation-delay: 6s;}
   </section>
 </div>
 
-  <a href="page3.html" style="color: white; background-color: blue; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
-  Aller à la page 3
-</a>
+<!-- Bouton vers le CV -->
+<a href="page3.html" class="cv-button">Mon CV</a>
 
-  
 </body>
-
 </html>
