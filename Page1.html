@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bienvenue sur mon site</title>
+
+<style>
+/* --- Style général --- */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(to bottom right, #ffe4ec, #fff);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* --- Conteneur principal --- */
+.paragraphe {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #ffe6f2;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* --- Titres --- */
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #c2185b;
+  animation: slideIn 1s ease forwards;
+}
+
+/* --- Paragraphes --- */
+p {
+  text-align: center;
+  line-height: 1.6;
+  font-size: 18px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* --- Effet au survol --- */
+.paragraphe:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+/* --- Animation d’apparition (diaporama) --- */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* --- Animation de glissement pour les titres --- */
+@keyframes slideIn {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* --- Effet diaporama (texte qui apparaît l’un après l’autre) --- */
+section {
+  opacity: 0;
+  animation: showSlide 1s ease forwards;
+}
+section:nth-child(1) {animation-delay: 0.5s;}
+section:nth-child(2) {animation-delay: 2s;}
+section:nth-child(3) {animation-delay: 4s;}
+section:nth-child(4) {animation-delay: 6s;}
+
+@keyframes showSlide {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="paragraphe">
+  <section>
+    <h1>Bienvenue sur notre site ! 🌸</h1>
+  </section>
+
+  <section>
+    <h2>Je me présente</h2>
+    <p>
+      Bonjour et bienvenue sur mon site !<br>
+      Je me nomme <strong>BADA Stacy Lynacay</strong>.<br>
+      Je suis née à Cotonou le <strong>23 janvier 2007</strong> et je suis étudiante à
+      <strong>Pigier Bénin</strong> en <em>Réseau Mobilité Sécurité</em>.
+    </p>
+  </section>
+
+  <section>
+    <h3>Je travaille sur la création de mon tout premier site web</h3>
+    <p>
+      Il s'agit d'un site que j'ai conçu pour m'exercer et mieux comprendre la création d’un site web.  
+      Je le fais car je souhaite évoluer dans le monde de l'informatique et de la cybersécurité. 💻
+    </p>
+  </section>
+
+  <section>
+    <p><em>Merci de visiter mon premier site ! 💖</em></p>
+  </section>
+</div>
+
+  <a href="page3.html" style="color: white; background-color: blue; padding: 10px 20px; border-radius: 8px; text-decoration: none;">
+  Aller à la page 3
+</a>
+
+  
+</body>
+
+</html>
