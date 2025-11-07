@@ -176,9 +176,10 @@ body {
   
 
   /* Image de fond */
-  background-image: url("image2.jpg"); /* Chemin vers ton image */
+  background-image: https://github.com/stxhub-pdg/Mon-site-web/blob/main/image2.jpg?raw=true; /* Chemin vers ton image */
   background-size: cover;                   /* L'image couvre tout l'écran */
   background-position: center;              /* Centrée */
   background-repeat: no-repeat;             /* Pas de répétition */
 }
+
 
